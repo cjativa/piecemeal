@@ -1,0 +1,21 @@
+.landing {
+    padding: 30px; 
+
+    &__header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        height: 50px;
+    }
+
+    &__links {
+       text-align: end;
+       display: flex;
+       justify-content: space-around;
+    }
+    
+
+    &__middle {
+        
+    }
+}
