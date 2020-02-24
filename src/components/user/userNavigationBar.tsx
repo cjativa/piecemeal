@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { SetStateAction } from 'react';
 
-export const UserNavigationBar = () => {
+interface props {
+    onMenuClick: () => void
+}
+
+export const UserNavigationBar = (props: props) => {
     return (
         <div className="user-bar">
             <div className="user-bar__primary-links">
@@ -10,7 +14,7 @@ export const UserNavigationBar = () => {
             </div>
             <div className="user-bar__secondary-links">
                 <div className="user-links">
-                    <a className="user-links__me">Me</a>
+                    <button className="user-links__me" onClick={() => props.onMenuClick()}>Me</button>
                     <div className="user-links__avatar" />
                 </div>
             </div>

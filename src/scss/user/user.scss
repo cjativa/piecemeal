@@ -1,0 +1,35 @@
+.user__body {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.inner-container {
+  padding: 10px 0px;
+  height: 600px;
+}
+
+.field {
+  width: 300px;
+  &--row {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    row-gap: 10px;
+    padding: 15px 0px;
+  }
+  &--col {
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    align-items: center;
+    column-gap: 5px;
+    padding: 12px 0px;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--center {
+    text-align: center;
+  }
+}

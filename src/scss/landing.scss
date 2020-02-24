@@ -1,5 +1,8 @@
 .landing {
     padding: $padding; 
+    display: grid;
+    grid-template-rows: min-content min-content;
+    row-gap: 50px;
 
     &__header {
         display: grid;

@@ -1,7 +1,13 @@
 @import "./variables.scss";
+@import "./shared.scss";
 @import "./landing.scss";
-@import "./userNavigationBar.scss";
 
+@import "./user/user.scss";
+@import "./user/profile.scss";
+@import "./user/userNavigationBar.scss";
+@import "./user/userSideMenu.scss";
+
+@import "./project/project.scss";
 
 html {
   font-style: normal;
@@ -9,7 +15,19 @@ html {
   font-family: $font;
 }
 
+html,
+body,
+#root,
+.App {
+  height: 100%;
+}
+
 h1 {
   margin: 0;
   font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }

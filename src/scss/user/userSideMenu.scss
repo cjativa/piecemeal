@@ -1,0 +1,25 @@
+.user-side-menu {
+  width: 0%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  border: 1px solid $outline;
+  overflow-x: hidden;
+  transition: 0.3s;
+
+  &.menu--open {
+    width: 400px;
+    transition: 0.3s;
+  }
+
+  .user-list {
+
+    li { list-style: none; }
+
+    &__item {
+      height: 70px;
+      display: block;
+    }
+  }
+}
