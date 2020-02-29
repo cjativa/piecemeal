@@ -14,7 +14,6 @@ export const Account = () => {
 
     const { pathname } = useLocation();
 
-
     return (
         <div className="account inner-container">
             <p>Account</p>
