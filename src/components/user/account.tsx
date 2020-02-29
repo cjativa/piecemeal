@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { Link, Switch, Route, Redirect, useLocation } from 'react-router-dom';
-import { Email } from '../account/email';
+import { Information } from '../account/information';
 import { Billing } from '../account/billing';
 import { Username } from '../account/username';
 
 export const Account = () => {
 
     const accountTabs = [
-        { name: 'Email', slug: 'email', component: Email },
+        { name: 'Information', slug: 'information', component: Information },
         { name: 'Username and Password', slug: 'username', component: Username },
         { name: 'Billing', slug: 'billing', component: Billing },
     ];
@@ -31,7 +31,7 @@ export const Account = () => {
                         <Route key={index} path={`/user/account/${tab.slug}`} component={tab.component} />
                     )
                 })}
-                <Redirect exact from="/user/account" to="/user/account/email" />
+                <Redirect exact from="/user/account" to="/user/account/information" />
             </Switch>
         </div>
     )
