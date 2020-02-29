@@ -8,6 +8,6 @@ Not everyone might have the time to sign up for your service to go through, or t
 
 That's where Piecemeal comes in -- it's meant to serve as a quick but demonstrative showcase of your project, app, or service, where you can add the context, the fine details, and the imagery of the pieces that comprise your project.
 
-It's almost like [about.me](about.me), but more directly oriented on showcasing your apps and WIP's, while also highlighting the skills and talent you used to build your pieces.
+It's almost like [about.me](https://www.about.me), but more directly oriented on showcasing your apps and WIP's, while also highlighting the skills and talent you used to build your pieces.
 
 More to come...
