@@ -13,6 +13,12 @@ export const Profile = () => {
         set(value);
     }
 
+    const onSave = () => {
+        console.log(
+            title, bio, company, location, website
+        )
+    }
+
     return (
         <div className="profile inner-container">
             <div className="profile__content">
@@ -39,7 +45,7 @@ export const Profile = () => {
                     <input type="text" name="website" onChange={(e) => onChange(setWebsite, e)} placeholder="Website" value={website} />
                 </div>
                 <div className="field--right">
-                    <button>Save</button>
+                    <button onClick={onSave}>Save</button>
                 </div>
             </div>
         </div>
