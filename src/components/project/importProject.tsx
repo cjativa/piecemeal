@@ -9,6 +9,7 @@ export const ImportProject = () => {
             <br/>
             <br/>
             <p>I'd like to bring in my project from...</p>
+            <button>GitHub</button>
         </div>
     )
 }

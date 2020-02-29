@@ -1,0 +1,13 @@
+.account {
+  &__tabs {
+    padding: 20px 0px;
+  }
+  &__tab-link {
+    padding: 10px 0px;
+    margin-right: 50px;
+
+    &.active {
+      border-bottom: 1px solid $outline;
+    }
+  }
+}

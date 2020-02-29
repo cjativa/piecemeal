@@ -1,0 +1,12 @@
+.project-landing {
+  .project {
+    &__title {
+        text-align: center;
+    }
+    &__image {
+      height: 450px;
+      width: auto;
+      border: 1px solid $outline;
+    }
+  }
+}

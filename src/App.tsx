@@ -5,7 +5,6 @@ import './scss/styles.scss';
 
 import { Landing } from './components/landing';
 import { User } from './components/user/user';
-import { Project } from './components/project/project';
 
 const App = () => {
   return (

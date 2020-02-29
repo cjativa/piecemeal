@@ -4,10 +4,12 @@
 
 @import "./user/user.scss";
 @import "./user/profile.scss";
+@import "./user/account.scss";
 @import "./user/userNavigationBar.scss";
 @import "./user/userSideMenu.scss";
 
 @import "./project/project.scss";
+@import "./project/projectLanding.scss";
 
 html {
   font-style: normal;

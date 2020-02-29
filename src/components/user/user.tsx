@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import {
     Switch,
-    Route
+    Route,
+    Redirect
 } from "react-router-dom";
 
 import { Profile } from './profile';
@@ -15,6 +16,7 @@ import { UserSideMenu } from './userSideMenu';
 import { Project } from '../project/project';
 import { CreateProject } from '../project/createProject';
 import { ImportProject } from '../project/importProject';
+import { ProjectLanding } from '../project/projectLanding';
 
 export const User = () => {
 
@@ -31,14 +33,16 @@ export const User = () => {
             <UserSideMenu menuExpanded={menuExpanded} />
             <div className="user__body container">
                 <Switch>
-                    <Route path="/user/profile" component={Profile} />
                     <Route path="/user/project-space" component={ProjectSpace} />
                     <Route path="/user/social" component={Social} />
                     <Route path="/user/account" component={Account} />
                     <Route path="/user/domain" component={Domain} />
+                    <Route path="/user/profile" component={Profile} />
+                    <Redirect exact from="/user" to="/user/profile" />
                     <Route exact path="/user/project/" component={Project} />
                     <Route path="/user/project/create" component={CreateProject} />
                     <Route path="/user/project/import" component={ImportProject} />
+                    <Route path="/user/project/:name" component={ProjectLanding} />
                 </Switch>
             </div>
         </>
