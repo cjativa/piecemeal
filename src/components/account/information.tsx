@@ -19,7 +19,6 @@ export const Information = () => {
     return (
         <div className="information">
             <div className="information__content">
-                <p>Information</p>
                 <div className="field field--row">
                     <label>First Name</label>
                     <input type="text" name="first-name" value={firstName} onChange={(e) => onChange(setFirstName, e)} />
