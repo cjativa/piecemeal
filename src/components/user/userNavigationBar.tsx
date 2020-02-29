@@ -8,7 +8,7 @@ export const UserNavigationBar = (props: props) => {
     return (
         <div className="user-bar">
             <div className="user-bar__primary-links">
-                <span>piecemeal.dev</span>
+                <span>piecemeal.app</span>
                 <span>|</span>
                 <span>username</span>
             </div>
