@@ -12,6 +12,7 @@
 
 .field {
   width: 300px;
+
   &--row {
     display: grid;
     grid-template-rows: min-content 1fr;
@@ -32,5 +33,9 @@
 
   &--center {
     text-align: center;
+  }
+
+  &.unset-width {
+    width: 100%;
   }
 }
