@@ -5,8 +5,12 @@ export const CreateProject = () => {
     const [name, setName] = useState('');
     const [description, setDescription] = useState('');
     const [liveUrl, setLiveUrl] = useState('');
+    const [repository, setRepository] = useState('');
+
     const [tags, setTags] = useState(['']);
     const [inputTag, setInputTag] = useState('');
+
+    const [displayAdditional, setAdditional] = useState(false);
 
     const onChange = (set: any, event: any) => {
         const { value } = event.target;
@@ -24,6 +28,8 @@ export const CreateProject = () => {
         console.log(name, description, liveUrl, tags);
     }
 
+    const toggleAdvanced = () => setAdditional(!displayAdditional);
+
     return (
         <div className="create-project">
             <p>Create a new project</p>
@@ -39,11 +45,7 @@ export const CreateProject = () => {
                 <label>Description</label>
                 <textarea name="description" onChange={(e) => onChange(setDescription, e)} value={description} />
             </div>
-            <div className="field field--row">
-                <label>Live URL</label>
-                <p>Is your project already up and running somewhere? If so, feel free to link it here.</p>
-                <input type="text" name="live-url" onChange={(e) => onChange(setLiveUrl, e)} value={liveUrl} />
-            </div>
+
             <div className="field field--row">
                 <label>Tags</label>
                 <span>Let others know what your project is about with tags. You can do this later too.</span>
@@ -54,6 +56,23 @@ export const CreateProject = () => {
                     })}
                 </div>}
             </div>
+            <div className="field">
+                <span onClick={toggleAdvanced}>Additional</span>
+            </div>
+            {displayAdditional &&
+                <>
+                    <div className="field field--row">
+                        <label>Code Repository</label>
+                        <p>Add your project source repository.</p>
+                        <input type="text" name="repository" onChange={(e) => onChange(setRepository, e)} value={repository} />
+                    </div>
+                    <div className="field field--row">
+                        <label>Live URL</label>
+                        <p>Is your project already up and running somewhere? If so, feel free to link it here.</p>
+                        <input type="text" name="live-url" onChange={(e) => onChange(setLiveUrl, e)} value={liveUrl} />
+                    </div>
+                </>
+            }
             <button className="btn" onClick={onCreate}>
                 Create
             </button>
